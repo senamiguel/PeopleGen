@@ -5,7 +5,7 @@ if(isset($_GET['number'])){
     $response = file_get_contents("https://randomuser.me/api/?results=".$numero);
     $response = json_decode($response);
     if(isset($numero) && $numero > 0 && $numero <= 20){
-        echo "<h1> Escolha um número </h1>";
+        echo "<h1> Escolha um número de 01 a 20</h1>";
         foreach($response->results as $pessoa ) {
             $pessoas[] = [
                 'nome' => $pessoa->name->first,

@@ -20,6 +20,6 @@ if(isset($_GET['number'])){
     }
 }
 else{
-    echo "<h1> Escolha um número </h1>";
+    echo "<h1> Escolha um número de 01 a 20</h1>";
     $pessoas = "Escolha um número";
 }

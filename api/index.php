@@ -11,7 +11,7 @@ include "gerador.php";
 </head>
 <body>
     <form action="index.php" method="get">
-        <label for="number" >Quantas pessoas quer gerar?</label>
+        <label for="number" >Quantas pessoas quer gerar? (1 a 20)</label>
         <input type="number" name="number" min="1"max="20">
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
